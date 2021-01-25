@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Going To Sleep Page</h1>
+    <div class="content-section" style="padding-top: 20px">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class='form-group'>
+                <div class="form-group">
+                    {{ form.sleepStart.label(class="form-control-lable") }}
+                    {% if form.sleepStart.errors %}
+                        {{ form.sleepStart(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.sleepStart.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.sleepStart(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.sleepEnd.label(class="form-control-lable") }}
+                    {% if form.sleepEnd.errors %}
+                        {{ form.sleepEnd(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.sleepEnd.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.sleepEnd(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock %}
