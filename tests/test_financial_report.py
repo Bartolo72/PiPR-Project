@@ -1,4 +1,4 @@
-from financial_report import (
+from utils.financial_report import (
     create_income_history,
     set_income_from,
     calculate_income,

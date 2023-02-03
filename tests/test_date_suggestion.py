@@ -1,4 +1,4 @@
-from date_suggestion import (
+from utils.date_suggestion import (
     hour_format,
     date_description,
     get_date_and_hour,
@@ -9,7 +9,7 @@ from date_suggestion import (
     suggest_for_clients,
     suggest_for_groups
 )
-from reservation_and_price_schedule import create_reservation_json
+from utils.reservation_and_price_schedule import create_reservation_json
 import datetime
 from classes import Bath, Date, InvalidHour
 import pytest

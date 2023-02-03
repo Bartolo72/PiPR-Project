@@ -1,4 +1,4 @@
-from reservation_and_price_schedule import (
+from utils.reservation_and_price_schedule import (
     create_dates,
     create_reservation_json,
     create_price_schedule_json,
@@ -17,7 +17,7 @@ from classes import (
     WeekDay,
     PriceSchedule
 )
-from financial_report import create_income_history
+from utils.financial_report import create_income_history
 
 
 def test_create_dates(monkeypatch):
