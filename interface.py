@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from reservation_and_price_schedule import (
+from utils.reservation_and_price_schedule import (
     create_price_schedule_json,
     create_reservation_json,
     make_reservation
@@ -15,7 +15,7 @@ from classes import (
     PriceSchedule,
     InvalidHour
 )
-from financial_report import (
+from utils.financial_report import (
     create_income_history,
     create_report,
     display_report

@@ -1,11 +1,11 @@
 from calendar import Calendar
 from datetime import date
 import json
-from date_suggestion import (
+from utils.date_suggestion import (
     suggest_for_groups,
     suggest_for_clients
 )
-from financial_report import set_income_from
+from utils.financial_report import set_income_from
 
 
 def today():
